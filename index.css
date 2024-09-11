@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@400&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+input {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.bg-[#F4ECE1] {
+    background-color: #F4ECE1;
+}
+
+.bg-[#F9F9F9] {
+    background-color: #F9F9F9;
+}
