@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-[#F9F9F9]">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-4 font-sans">Create wallet</h1>
+        <p class="text-center text-gray-600 mb-6 font-sans">This is a non-custodial wallet, <span class="font-semibold">save the phrase</span> to access it.</p>
+        
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Solana Address</label>
+            <div class="relative bg-[#F4ECE1] rounded-md p-2 text-gray-700">
+                <input type="text" id="solanaAddress" readonly class="w-full bg-transparent outline-none font-mono text-sm" value="Loading...">
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Seed phrase</label>
+            <div class="relative bg-[#F4ECE1] rounded-md p-2 text-gray-700">
+                <input type="text" id="seedPhrase" readonly class="w-full bg-transparent outline-none font-mono text-sm" value="Loading...">
+            </div>
+        </div>
+
+        <button id="createWalletBtn" class="w-full bg-black text-white py-2 rounded-md font-semibold mb-4 font-sans">Create wallet</button>
+        <button id="importAccountBtn" class="w-full text-blue-500 font-medium font-sans">Import existing account</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
